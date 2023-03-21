@@ -12,4 +12,12 @@ export abstract class WidgetBase {
 
   protected dataProvider = inject(WidgetDataService);
   protected settings = inject(WidgeSettingsService);
+
+  // inject options
+  // protected settings = inject(WidgeSettingsService, {
+  //   self: true,
+  //   skipSelf: false,
+  //   host: true,
+  //   optional: false,
+  // });
 }
